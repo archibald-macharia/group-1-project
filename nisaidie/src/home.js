@@ -1,10 +1,11 @@
 import React from 'react'
+import './index.css'
 
 function Home(){
     return(
-        <div id='header'>
+        <div className='header'>
             <div id='logo'>
-                Ns.
+                <h2><span id='n'>N</span><span id='s'>s.</span></h2> 
             </div>
             <div className='Navbar'>
                 <ul>

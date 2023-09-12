@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.header{
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+#logo{
+    /* background-color: beige; */
+    padding: 10px;
+}
+#logo #n, #s{
+    letter-spacing: 0cap;
+    color:red;
+    margin:0px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.Navbar{
+   margin-left: 90vh;
+   
+   /* background-color: aliceblue; */
+}
+.Navbar ul{
+    display: flex;
+}
+.Navbar ul li{
+    list-style: none;
+    margin-left:24px;
+    padding:10px;
+    /* background:red; */
+    font-family: ;
+    
+}
+
+.Navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
