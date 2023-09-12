@@ -6,7 +6,9 @@ function StoriesList(){
     const [stories,setStories] = useState(userStories)
     return(
         <div className="story-lists">
-            
+            {stories.map((story) => 
+            <Story key={story} userStory={story}/>
+            )}
         </div>
     );
 }
