@@ -1,8 +1,25 @@
 import React, {useState} from 'react';
 
 function newStoryForm({trigger, setTrigger, onAddStory}) {
-    //const [formData,setFormData] = useState({})
-  
+    const [name,setName] = useState("")
+    const [message,setMessage] = useState("")
+
+    function handleSubmit(event){
+        event.preventDefault()
+        const formData = {
+            Name: name,
+            Story: message
+        }
+        fetch("http://localhost:3000/userStories",{
+            method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+        })
+        .then((r) => r.json)
+        .then((newStory) => onAddStory(newStory))
+    }
 
     return (trigger) ? (
         <div className='pop-up-container'>
