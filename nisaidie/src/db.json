@@ -26,3 +26,32 @@
     }
   ]
 }
+
+ {
+        "name": "Peris Wakio",
+        "rating ": 5,
+        "experience": 5,
+        "speciality": "psychiatry",
+        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "name": "Archbald Gicheru",
+        "rating ": 5,
+        "experience": 5,
+        "speciality": "psychiatry",
+        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "name": "Abigail Otieno",
+        "rating ": 5,
+        "experience": 5,
+        "speciality": "psychiatry",
+        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "name": "Newton Bundi",
+        "rating ": 5,
+        "experience": 5,
+        "speciality": "psychiatry",
+        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
