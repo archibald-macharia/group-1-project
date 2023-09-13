@@ -1,45 +1,22 @@
-import React from 'react'
-import placeholder from "./profile.png"
-
-const data = [
-    {
-        "name": "Peris Wakio",
-        "rating ": 5,
-        "experience": 5,
-        "speciality": "psychiatry",
-        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "name": "Archbald Gicheru",
-        "rating ": 5,
-        "experience": 5,
-        "speciality": "psychiatry",
-        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "name": "Abigail Otieno",
-        "rating ": 5,
-        "experience": 5,
-        "speciality": "psychiatry",
-        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        "name": "Newton Bundi",
-        "rating ": 5,
-        "experience": 5,
-        "speciality": "psychiatry",
-        "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-]
-
+import React, {useState,useEffect} from 'react'
 
 
 function Home(){
-    const [pData, setData] = React.useState([])
+    const [pData, setData] = useState([])
 
-    React.useEffect(()=>{
-        setData(data)
-    }, [])
+    useEffect(()=>{
+
+    // Fetch data from db.json when the component mounts
+    fetch('http://localhost:8002/cards') // Assuming you have an endpoint on your server to retrieve card data
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data); // Set the retrieved data to the cardData state
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+
+    }, []);
     return(
         <div >
             
@@ -86,15 +63,15 @@ function Home(){
                     justifyContent: "center"
                 }}>
 
-            {pData.map(datum=>
+            {pData.map((datum)=>(
                 <div className="card" style={{width: "18rem", margin: "1em"}}>
-                <img src={placeholder} className="card-img-top" alt="..."/>
+                <img src={datum.imageUrl} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{datum.name}</h5>
                     <p className="card-text">{datum.aboutMe}</p>
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
-            </div>
+            </div>)
             )}
             </div>
                         
