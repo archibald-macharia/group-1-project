@@ -51,7 +51,7 @@ function Home(){
 
             {pData.map((datum)=>(
                 <div className="card" style={{width: "18rem", margin: "1em"}}>
-                <img src={datum.imageUrl} className="card-img-top" alt="..."/>
+                <img src={datum.imageUrl} className="card-img-top" alt="..." height={200} width={150}/>
                 <div className="card-body">
                     <h5 className="card-title">{datum.name}</h5>
                     <p className="card-text">{datum.aboutMe}</p>

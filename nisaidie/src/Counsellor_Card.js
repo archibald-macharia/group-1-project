@@ -11,7 +11,7 @@ function Card ({ imageUrl, bio, name }) {
     return (
       <div className="counsellor-card" style={{width: 700}}>
         <div className="left-section">
-          <img src={imageUrl} alt="Card" className="counsellor-card-image" />
+          <img src={imageUrl} alt="Card" className="counsellor-card-image" height={150} width={150}/>
           <button onClick={handleLikeClick} className="like-button">
             Like {likes}
           </button>
