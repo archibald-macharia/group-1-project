@@ -9,11 +9,11 @@ function Card ({ imageUrl, bio, name }) {
     };
   
     return (
-      <div className="counsellor-card">
+      <div className="counsellor-card" style={{width: 700}}>
         <div className="left-section">
           <img src={imageUrl} alt="Card" className="counsellor-card-image" />
           <button onClick={handleLikeClick} className="like-button">
-            Like ({likes})
+            Like {likes}
           </button>
         </div>
         <div className="right-section">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Counsellor_Card';
 
-function Counsellor () {
+function Counsellors () {
   const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,14 @@ function Counsellor () {
   return (
     <div>
       <h1>Card List</h1>
-      <div className="card-list">
+      <div className="card-list" style={{
+        width: "100%",
+        display: 'flex',
+        flexDirection: "column",
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center"
+      }}>
         {cardData.map((card, index) => (
           <Card
             key={index}
@@ -33,4 +40,4 @@ function Counsellor () {
   );
 };
 
-export default Counsellor;
+export default Counsellors;
