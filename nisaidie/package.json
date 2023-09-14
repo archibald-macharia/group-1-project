@@ -11,13 +11,13 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "server": "json-server --watch db.json -p 8002",
-    "eject": "react-scripts eject"
+    "dev": "nodemon server.js",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +38,8 @@
     ]
   },
   "devDependencies": {
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "nodemon": "1.18.4"
   }
 }
 
