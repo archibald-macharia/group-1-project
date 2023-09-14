@@ -5,7 +5,7 @@ function About(){
         <div>
             <h1>Meet the developers behind NISAIDIE</h1>
             <h3>Who Are We?</h3>
-            <p>Nisaidie is brought to you by a group of aspiring software developers witha desire to offer help to thosewho need it but don't know where to start.</p>
+            <p>Nisaidie is brought to you by a group of aspiring software developers witha desire to offer help to those who need it but don't know where to start.</p>
             <div className='about-cards'>
             <div className='individual-card'>
                 <img src='https://st3.depositphotos.com/17828278/33150/v/450/depositphotos_331503262-stock-illustration-no-image-vector-symbol-missing.jpg'
