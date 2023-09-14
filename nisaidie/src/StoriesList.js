@@ -17,6 +17,11 @@ function StoriesList(){
     function handleAddStory(newStory){
         setStories([...stories,newStory])
     }
+    
+    function handleCardDelete(deletedCard){
+        const filteredCards = stories.filter((story) => story.filter !== deletedCard.id )
+        setStories(filteredCards)
+    }
 
     return(
         <div className="story-lists">
@@ -26,7 +31,13 @@ function StoriesList(){
                 <NewStoryPopup trigger={formPopup} setTrigger={setFormPopup} onAddStory={handleAddStory}/>
             </div>
             {stories.map((userStory, index) => 
-            <Story key={index} firstName={userStory.Firstname} lastName={userStory.Lastname} userStory={userStory.Story} />
+            <Story 
+                key={index} 
+                storyId={userStory.id}
+                firstName={userStory.Firstname} 
+                lastName={userStory.Lastname} 
+                userStory={userStory.Story} 
+                onDeleteCard={handleCardDelete}/>
             )}
             
         </div>
