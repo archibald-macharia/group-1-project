@@ -1,3 +1,4 @@
+
 import React,{useState, useEffect} from 'react';
 import Story from './Story';
 import NewStoryPopup from './NewStoryPopup';
@@ -13,13 +14,10 @@ function StoriesList(){
         .catch(error => {console.error('Fetch Error:', error)})
     },[])
 
-    console.log(stories)
-
     function handleAddStory(newStory){
         setStories([...stories,newStory])
     }
 
-    console.log(stories)
     return(
         <div className="story-lists">
             <h1>Inpirational stories</h1>
