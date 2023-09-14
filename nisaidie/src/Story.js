@@ -1,12 +1,14 @@
 import React from 'react';
 
-function Story({userStory}) {
-    const {name, story} = {userStory}
+function Story({firstName, lastName ,userStory}) {
+
     return (
-        <div>
-            <h3>{name}</h3>
-            <p>{story}</p>
-        </div>
+        <div className='card-container'>
+        <div className='card-content'>
+                <h3 className='card-name'>{firstName} {lastName}</h3>
+                <p className='card-body'>{userStory}</p>
+            </div>
+            </div>
     );
 }
 
