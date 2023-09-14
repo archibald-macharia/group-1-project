@@ -18,7 +18,7 @@ function Counsellors () {
 
   return (
     <div>
-      <h1>Card List</h1>
+      <h1>Meet the counsellors</h1>
       <div className="card-list" style={{
         width: "100%",
         display: 'flex',
