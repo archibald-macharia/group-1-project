@@ -4,17 +4,21 @@ import Card from './Counsellor_Card';
 function Counsellors () {
   const [cardData, setCardData] = useState([]);
 
+  const fetchData = () => {
+    return fetch('http://localhost:8002/cards') 
+    .then((response) => response.json())
+    .then((data) => {
+      setCardData(data); 
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error);
+    });
+  }
+
   useEffect(() => {
-    // Fetch data from db.json when the component mounts
-    fetch('http://localhost:8002/cards') // Assuming you have an endpoint on your server to retrieve card data
-      .then((response) => response.json())
-      .then((data) => {
-        setCardData(data); // Set the retrieved data to the cardData state
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }, []); // The empty array means this effect runs once, similar to componentDidMount
+    fetchData()
+  }, []); 
+
 
   return (
     <div>
@@ -27,12 +31,15 @@ function Counsellors () {
         alignContent: "center",
         alignItems: "center"
       }}>
-        {cardData.map((card, index) => (
+        {cardData.map((card) => (
           <Card
-            key={index}
+            key={card.id}
+            card={card}
             imageUrl={card.imageUrl}
             name={card.name}
             bio={card.aboutMe}
+            likes={card.likes}
+            fetchData={fetchData}
           />
         ))}
       </div>
