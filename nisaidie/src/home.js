@@ -136,7 +136,7 @@ function Home(){
                 <div className="card-body">
                     <h5 className="card-title">{datum.name}</h5>
                     <p className="card-text">{datum.aboutMe}</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <a href="#" className="btn btn-primary">{datum.email}</a>
                 </div>
             </div>)
             )}

@@ -20,8 +20,15 @@ const NavBar=()=>{
                     <a className="nav-link active" aria-current="page" href="/stories">stories</a>
                     </li>
                     <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="/about">about</a>
+                    </li>
+                    <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="/contact">contacts</a>
+                    </li>
+                    <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="/signup">counsellor signup</a>
                     </li>
+                    
                 </ul>
                 </div>
             </div>

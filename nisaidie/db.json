@@ -71,7 +71,7 @@
     {
       "id": 1,
       "imageUrl": "https://i.postimg.cc/Bbf9vnrL/img1.jpg",
-      "email": "",
+      "email": "peris.wakio@counsellors",
       "password": "",
       "name": "Peris Wakio",
       "rating ": 5,
@@ -84,7 +84,7 @@
     {
       "id": 2,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJ6htqkw4mtmyNyc5cPmFT2ctOZU6VEMb-lcXVmUMs9aQg8XL-wcitfdJsvXjIYxSZK4&usqp=CAU",
-      "email": "",
+      "email": "archibald.gicheru@counsellors",
       "password": "",
       "name": "Archbald Gicheru",
       "rating ": 5,
@@ -97,7 +97,7 @@
     {
       "id": 3,
       "imageUrl": "https://i.postimg.cc/sxPFGRzn/img2.jpg",
-      "email": "",
+      "email": "abigail.otieno@counsellors",
       "password": "",
       "name": "Abigail Otieno",
       "rating ": 5,
@@ -110,7 +110,7 @@
     {
       "id": 4,
       "imageUrl": "https://image.pngaaa.com/303/1721303-middle.png",
-      "email": "",
+      "email": "newton.bundi@counsellors",
       "password": "",
       "name": "Newton Bundi",
       "rating ": 5,

@@ -6,13 +6,17 @@ import NewStoryPopup from './NewStoryPopup';
 function StoriesList(){
     const [stories, setStories] = useState([])
     const [formPopup, setFormPopup] = useState(false)
-
-    useEffect(() => {
-        fetch("http://localhost:3000/userStories")
+    
+    function fetchStories(){
+            return fetch('http://localhost:8002/userStories')
         .then((r) => r.json())
         .then((fetchData) => setStories(fetchData))
         .catch(error => {console.error('Fetch Error:', error)})
-    },[])
+        };
+    useEffect(() => {
+        fetchStories()  
+    },[stories])
+
 
     function handleAddStory(newStory){
         setStories([...stories,newStory])

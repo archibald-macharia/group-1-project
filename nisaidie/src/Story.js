@@ -3,7 +3,7 @@ import React from 'react';
 function Story({firstName, lastName ,userStory, onDeleteCard, storyId}) {
 
     function removeCard(){
-        fetch(`http://localhost:3000/userStories/${storyId}`,{
+        fetch(`http://localhost:8002/userStories/${storyId}`,{
             method: "DELETE",
         })
         .then((r) => r.json())
