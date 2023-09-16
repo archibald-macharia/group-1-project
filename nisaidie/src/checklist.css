@@ -1,0 +1,44 @@
+
+.checklist {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            padding: 5px;
+            width: 50%; 
+            margin: auto; 
+            gap: 40px; /* Adjust the gap between checkboxes */
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+
+}
+
+/* Individual Checkbox Label */
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+/* Checkbox Input */
+.checkbox-list input[type="checkbox"] {
+  margin-right: 20px; /* Spacing between checkbox and label text */
+  box-sizing:content-box;
+}
+
+/* Highlight Checked Checkboxes */
+.checkbox-list input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+/* Optional: Add Hover Effect */
+.checkbox-list label:hover {
+  text-decoration: underline;
+  color: #007bff; /* Change the color on hover */
+}
+
+.helpers {
+  margin-top: 60px;
+}
