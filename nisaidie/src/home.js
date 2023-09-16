@@ -1,8 +1,12 @@
 import React, {useState,useEffect} from 'react'
+import './checklist.css';
 
 
 function Home(){
     const [pData, setData] = useState([])
+    const [selectedIllness, setSelectedIllness] = useState('');
+    const [filteredData, setFilteredData] = useState(pData);
+
 
     useEffect(()=>{
 
@@ -17,13 +21,34 @@ function Home(){
       });
 
     }, []);
+
+      
+        const handleIllnessChange = (event) => {
+            setSelectedIllness(event.target.value);
+        };
+
+        console.log(selectedIllness);
+
+        useEffect(() => {
+            // Filter the data based on the selected illness
+            if (selectedIllness === '') {
+              setFilteredData(pData);
+            } else {
+              const filtered = pData.filter((item) =>
+                item.mentalIllnesses.includes(selectedIllness)
+              );
+              setFilteredData(filtered);
+            }
+          }, [selectedIllness, pData]);
+
+
     return(
         <div >
             
             
 
             <div style={{
-                minHeight: "80vh",
+                minHeight: "40vh",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
@@ -40,16 +65,72 @@ function Home(){
             </div>
 
 
+            <div >
+             <h3>Tell us what you are going through</h3>
+            <div className='checklist'>
 
+            <div className="checkbox-list">
+            <label>
+              <input 
+            type="checkbox"
+            value="Depression"
+            onChange={handleIllnessChange}
+            checked={selectedIllness === 'Depression'}
+             />
+             Depression
+              </label>
+            </div>
+
+            <div className="checkbox-list">
+             <label>
+              <input 
+            type="checkbox"
+            value="Anxiety"
+            onChange={handleIllnessChange}
+            checked={selectedIllness === 'Anxiety'}
+              />
+               Anxiety
+             </label>
+             </div>
+
+             <div className="checkbox-list">
+             <label>
+              <input 
+            type="checkbox"
+            value="Personality disorder"
+            onChange={handleIllnessChange}
+            checked={selectedIllness === 'Personality disorder'}
+              />
+               Personality disorder
+             </label>
+                </div>
+
+                <div className="checkbox-list">
+             <label>
+              <input 
+            type="checkbox"
+            value="PTSD"
+            onChange={handleIllnessChange}
+            checked={selectedIllness === 'PTSD'}
+              />
+               PTSD
+             </label>   
+             </div>   
+
+              </div>
+
+
+              </div>
 
             {/*  */}
+            <div className='helpers'>Here's a friend(s) who can help you</div>
             <div style={{
                     display: 'flex', 
                     flexDirection: "row", 
                     justifyContent: "center"
                 }}>
 
-            {pData.map((datum)=>(
+            {filteredData.map((datum)=>(
                 <div className="card" style={{width: "18rem", margin: "1em"}}>
                 <img src={datum.imageUrl} className="card-img-top" alt="..." height={200} width={150}/>
                 <div className="card-body">
@@ -62,6 +143,7 @@ function Home(){
             </div>
                         
         </div>
+   
     );
 }
 
