@@ -35,14 +35,12 @@ function handleSubmit (e){
       .catch((error) => {
         console.error('Error:', error);
       })
-      
-
       ;
   };
 
   return (
     <div className='sign-up-form'>
-      <h2>Sign Up</h2>
+      <h2>Sign Up as a counsellor</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
