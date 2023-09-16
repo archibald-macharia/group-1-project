@@ -1,24 +1,49 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Counsellor_card.css';
 
-function Card ({ imageUrl, bio, name }) {
-    const [likes, setLikes] = useState(0);
+function Card ({card, fetchData}) {
+
+  const [likeData, setLikes] = useState({likes:(card.likes)+1});
+
+  function handleLikeClick(card) {
+
+    setLikes({likes:(likeData.likes)+1})
   
-    function handleLikeClick() {
-      setLikes(likes + 1);
-    };
+    fetch(`http://localhost:8002/cards/${card.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(likeData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      })
+      ;
+
+
+
+
+  };
+      useEffect(() => {
+        fetchData()
+      }, [likeData]); 
   
     return (
       <div className="counsellor-card" style={{width: 700}}>
         <div className="left-section">
-          <img src={imageUrl} alt="Card" className="counsellor-card-image" height={150} width={150}/>
-          <button onClick={handleLikeClick} className="like-button">
-            Like {likes}
+          <img src={card.imageUrl} alt="Card" className="counsellor-card-image" height={150} width={150}/>
+          <button onClick={() => handleLikeClick(card)} className="like-button">
+            Like {card.likes}
           </button>
         </div>
         <div className="right-section">
-          <h1 className="card-name">{name}</h1>
-          <p className="counsellor-card-text">{bio}</p>
+          <h1 className="card-name">{card.name}</h1>
+          <p className="counsellor-card-text">{card.aboutMe}</p>
         </div>
       </div>
     );
