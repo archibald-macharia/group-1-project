@@ -53,3 +53,18 @@
   margin-top:50px;
 }
 
+#counsellors{
+  animation: fadein 2s;
+  z-index: +1;
+  margin: 0 auto 0 auto;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
