@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/group-1-project/static/css/main.9920c3cc.css",
+    "main.js": "/group-1-project/static/js/main.5088afad.js",
+    "static/media/supercat.jpg": "/group-1-project/static/media/supercat.e92cc6736eed2a49a5f3.jpg",
+    "static/media/superman dog.jpeg": "/group-1-project/static/media/superman dog.b55d9cd99a76b1bbf944.jpeg",
+    "static/media/superlion.jpg": "/group-1-project/static/media/superlion.d4288d5082251703f22a.jpg",
+    "static/media/batcat.jpeg": "/group-1-project/static/media/batcat.4c89a3659b9099053fae.jpeg",
+    "index.html": "/group-1-project/index.html",
+    "main.9920c3cc.css.map": "/group-1-project/static/css/main.9920c3cc.css.map",
+    "main.5088afad.js.map": "/group-1-project/static/js/main.5088afad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9920c3cc.css",
+    "static/js/main.5088afad.js"
+  ]
+}
