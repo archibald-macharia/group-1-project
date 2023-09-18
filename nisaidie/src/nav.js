@@ -1,3 +1,5 @@
+import React from 'react'
+import './navbar.css'
 
 
 const NavBar=()=>{
@@ -26,7 +28,7 @@ const NavBar=()=>{
                     <a className="nav-link active" aria-current="page" href="/contact">contacts</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/signup">counsellor signup</a>
+                    <a className="nav-link active" aria-current="page" href="/signup">signup</a>
                     </li>
                     
                 </ul>

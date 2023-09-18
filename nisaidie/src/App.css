@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* background-image: linear-gradient(); */
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 .Navbar{

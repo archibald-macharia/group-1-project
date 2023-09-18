@@ -56,7 +56,7 @@ function Home(){
                 alignItems: "center"
                 }}>
                 <h1>Nisaidie</h1>
-                <p
+                <p id='suc'
                 style={{
                     width: "50%",
                     fontWeight: 500

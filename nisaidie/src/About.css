@@ -6,11 +6,34 @@
 .card-container{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
 }
 
 .about-img{
     height: 500px;
 
+}
+
+#about{
+    margin-top: 70px;
+}
+
+#devs-h1{
+    margin:20px;
+}
+
+#devs-h3{
+margin-bottom: 20px;
+}
+
+#p-desc{
+    margin: 0% 30% 2% 30%;
+    width: 500px;
+
+}
+
+.indi{
+    margin: 0% 30% 2% 30%;
+    width:500px;
 }

@@ -19,12 +19,6 @@
       "Story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "id": 4,
-      "Firstname": "Lewis",
-      "Lastname": "Hamilton",
-      "Story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
       "id": 5,
       "Firstname": "Charles",
       "Lastname": "Leclerc",
@@ -67,7 +61,7 @@
       "Story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ],
-      "cards": [
+  "cards": [
     {
       "id": 1,
       "imageUrl": "https://i.postimg.cc/Bbf9vnrL/img1.jpg",
@@ -78,8 +72,8 @@
       "experience": 5,
       "speciality": "psychiatry",
       "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "likes": 14,
-      "mentalIllnesses":"Anxiety"
+      "likes": 15,
+      "mentalIllnesses": "Anxiety"
     },
     {
       "id": 2,
@@ -91,8 +85,8 @@
       "experience": 5,
       "speciality": "psychiatry",
       "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "likes": 14,
-      "mentalIllnesses":"PTSD"
+      "likes": 15,
+      "mentalIllnesses": "PTSD"
     },
     {
       "id": 3,
@@ -104,8 +98,8 @@
       "experience": 5,
       "speciality": "psychiatry",
       "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "likes": 14,
-      "mentalIllnesses":"Depression"
+      "likes": 15,
+      "mentalIllnesses": "Depression"
     },
     {
       "id": 4,
@@ -117,8 +111,8 @@
       "experience": 5,
       "speciality": "psychiatry",
       "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "likes": 14,
-      "mentalIllnesses":"Personality disorder"
+      "likes": 15,
+      "mentalIllnesses": "Personality disorder"
     }
   ]
 }

@@ -2,6 +2,7 @@
 import React,{useState, useEffect} from 'react';
 import Story from './Story';
 import NewStoryPopup from './NewStoryPopup';
+import './story.css'
 
 function StoriesList(){
     const [stories, setStories] = useState([])
@@ -29,7 +30,7 @@ function StoriesList(){
 
     return(
         <div className="story-lists">
-            <h1>Inpirational stories</h1>
+            <h1 id='inspire-heading'>Inpirational stories</h1>
             <div>
                 <button className='btn' onClick={() => setFormPopup(true)}>Add your own story</button>
                 <NewStoryPopup trigger={formPopup} setTrigger={setFormPopup} onAddStory={handleAddStory}/>

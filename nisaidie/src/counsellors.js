@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Counsellor_Card';
+import './Counsellor_card.css'
 
 function Counsellors () {
   const [cardData, setCardData] = useState([]);
@@ -22,7 +23,7 @@ function Counsellors () {
 
   return (
     <div>
-      <h1>Meet the counsellors</h1>
+      <h1 id='counsel-header'>Meet the counsellors</h1>
       <div className="card-list" style={{
         width: "100%",
         display: 'flex',
