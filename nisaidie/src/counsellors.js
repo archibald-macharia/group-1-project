@@ -22,7 +22,7 @@ function Counsellors () {
 
 
   return (
-    <div>
+    <div id='counsellors'>
       <h1 id='counsel-header'>Meet the counsellors</h1>
       <div className="card-list" style={{
         width: "100%",
