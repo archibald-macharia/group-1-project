@@ -8,6 +8,7 @@ function SignUpForm () {
     password: "",
     name: "",
     aboutMe:"",
+    likes:0,
 });
 
   function handleChange(f) {
@@ -47,7 +48,7 @@ function handleSubmit (e){
           <input
             type="text"
             id="username"
-            name="username"
+            name="name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -80,7 +81,7 @@ function handleSubmit (e){
           <textarea
             id="bio"
             type ="text"
-            name="bio"
+            name="aboutMe"
             value={formData.aboutMe}
             onChange={handleChange}
             required
