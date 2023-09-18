@@ -3,6 +3,7 @@ import './navbar.css'
 
 
 const NavBar=()=>{
+    const newLocal = <a className="nav-link active" aria-current="page" href="/counsellors">counsellors</a>
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -16,7 +17,7 @@ const NavBar=()=>{
                     <a className="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/counsellors">counsellors</a>
+                    {newLocal}
                     </li>
                     <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="/stories">stories</a>

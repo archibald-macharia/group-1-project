@@ -16,3 +16,18 @@
 .nav-item{
     padding:15px;
 }
+
+.navbar{
+    animation: fadein 5s;
+    z-index: +1;
+    margin: 0 auto 0 auto;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

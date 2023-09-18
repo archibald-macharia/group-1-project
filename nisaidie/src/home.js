@@ -43,7 +43,7 @@ function Home(){
 
 
     return(
-        <div >
+        <div className='header'>
             
             
 

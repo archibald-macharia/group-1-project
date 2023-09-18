@@ -1,10 +1,10 @@
 import React from 'react';
-
+import './Contact.css'
 
 function Contact() {
     return (
         <div className='contact-page'>
-            <h1>Contact Us</h1>
+            <h1 id='contact-header'>Contact Us</h1>
             <p>Have any inquiries, suggestions, concerns, or feedback?</p>
             <p>We'd love to hear from you.</p>
             <div className='contacts'>
