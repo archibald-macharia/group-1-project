@@ -1,5 +1,9 @@
 import React from 'react';
 import './About.css'
+import Archie from './images/superman dog.jpeg'
+import Abigail from './images/supercat.jpg'
+import Peris from './images/batcat.jpeg'
+import Newton from './images/superlion.jpg'
 
 function About(){
     
@@ -10,28 +14,28 @@ function About(){
             <p id='p-desc'>Nisaidie is brought to you by a group of aspiring software developers with a desire to offer help to those who need it but don't know where to start.</p>
             <div className='about-cards'>
             <div className='individual-card'>
-                <img src='https://st3.depositphotos.com/17828278/33150/v/450/depositphotos_331503262-stock-illustration-no-image-vector-symbol-missing.jpg'
+                <img src={Abigail}
                 className='about-img'
                 alt='Developer 1'></img>
                 <h3>Abigail Otieno</h3>
                 <p className='indi'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             </div>
             <div className='individual-card'>
-                <img src='https://st3.depositphotos.com/17828278/33150/v/450/depositphotos_331503262-stock-illustration-no-image-vector-symbol-missing.jpg'
+                <img  src={Archie}
                 className='about-img'
                 alt='Developer 2'></img>
-                <h3>Archibal Gacheru</h3>
+                <h3>Archibald Gacheru</h3>
                 <p className='indi'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             </div>
             <div className='individual-card'>
-                <img src='https://st3.depositphotos.com/17828278/33150/v/450/depositphotos_331503262-stock-illustration-no-image-vector-symbol-missing.jpg'
+                <img src={Peris}
                 className='about-img'
                 alt='Developer 3'></img>
                 <h3>Peris Kingori</h3>
                 <p className='indi'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             </div>
             <div className='individual-card'>
-                <img src='https://st3.depositphotos.com/17828278/33150/v/450/depositphotos_331503262-stock-illustration-no-image-vector-symbol-missing.jpg'
+                <img src={Newton}
                 className='about-img'
                 alt='Developer 4'></img>
                 <h3>Newton Bundi</h3>

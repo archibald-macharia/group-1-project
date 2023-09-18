@@ -37,3 +37,18 @@ margin-bottom: 20px;
     margin: 0% 30% 2% 30%;
     width:500px;
 }
+
+#about{
+    animation: fadein 3s;
+    z-index: +1;
+    margin: 0 auto 0 auto;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
